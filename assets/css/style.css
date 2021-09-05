@@ -1,12 +1,22 @@
+
 @font-face {
     font-family: "Samim";
+    font-style: normal;
+    /* font-weight: 900; */
     src: url("../font/IRANSansDN.ttf");
-}
-
-html {
-    scroll-behavior: smooth;
-    direction: rtl;
-}
+  }
+  @font-face {
+    font-family: "Samim";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../font/IRANSansDN-Bold.ttf");
+  }
+  @font-face {
+    font-family:  "Samim";
+    font-style:normal;
+    font-weight: 300;
+    src: url("../font/IRANSansDN_Light.ttf");
+    }
 
 :root{
     --main-font:rgb(48, 45, 45);
@@ -19,7 +29,10 @@ html {
     --sm-font-size: 0.882rem;
     --xd-font-size: 0.75rem;
 }
-
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
 *,
 *:after,
 *:before {
@@ -291,3 +304,102 @@ button{
         font-size: .3em !important;
     }
 }  */
+/* .custom-shape-divider-bottom-1630839306 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630839306 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1630839306 .shape-fill {
+    fill: #E42828;
+} */
+.header-img{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 85vh;
+}
+.header-img-div{
+    position: relative;
+}
+.h-img-t-1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.h-img-t-2{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+.h-img-t-3{
+    position: absolute;
+    top: 40%;
+    right: 25%;
+}
+.header-img-title h1{
+    font-size: 4rem !important;
+    font-weight: bold;
+}
+@media only screen and (max-width: 1200px){
+    .header-img-title h1{
+        font-size: 3rem !important;
+    }
+   
+}
+@media only screen and (max-width: 900px){
+    .header-img-title h1{
+        font-size: 2.5rem !important;
+    }
+   
+}
+@media only screen and (max-width: 680px){
+    .header-img-title h1{
+        font-size: 2rem !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .header-img-title h1{
+        font-size: 1.5rem !important;
+    }
+}
+@media only screen and (max-width: 400px){
+    .header-img-title h1{
+        font-size: 1rem !important;
+    }
+}
+.header-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wave-under-header {
+    background: #ffffff;
+    padding: 0 3rem;
+  }
+  
+  
+  #wave-under-header::after {
+    content: "";
+    position: relative;
+    left: -3rem;
+    top: calc( 3rem - 4rem / 2);
+    float: left;
+    display: block;
+    height: 4rem;
+    width: 100vw;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %23e4e2e2;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %23ffffff;'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 100% 100%;
+  }
+/* box-shadow: 5px 10px 18px #888888;  */
